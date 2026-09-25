@@ -8,8 +8,6 @@ const STOCK = {
   lines: [
     { name: "130 Oz TUB", nameAr: "دلو فشار 130", mini: 60, refuel: 14, stores: 500 },
     { name: "46 Oz TUB", nameAr: "دلو فشار 46", mini: 180, refuel: 3, stores: 4925 },
-    { name: "64 Oz TUB", nameAr: "دلو فشار 64", mini: 51, refuel: 16, stores: 600 },
-    { name: "85 Oz TUB", nameAr: "دلو فشار 85", mini: 38, refuel: 14, stores: 1300 },
     { name: "Arwa - 500 ML", nameAr: "أروى 500 مل", mini: 21, refuel: 50, stores: 528 },
     { name: "BARBICAN CAN", nameAr: "باربيكان علبة", mini: 0, refuel: 19, stores: 30 },
     { name: "RANI CAN", nameAr: "راني علبة", mini: 0, refuel: 32, stores: 64 },
@@ -29,10 +27,10 @@ function stock() {
   const rows = STOCK.lines.map(l => `<tr><td>${l.nameAr}</td><td>${qty(l.mini)}</td><td>${qty(l.refuel)}</td><td>${qty(l.stores)}</td><td>${qty(l.mini+l.refuel+l.stores)}</td></tr>`).join("");
   return `<article class="card"><table><thead><tr><th>الصنف</th><th>Mini</th><th>Refuel</th><th>STORES</th><th>المجموع</th></tr></thead><tbody>${rows}</tbody></table></article>`;
 }
-function sales() { return `<article class="card"><h3>شاشة البيع</h3><p class="note">تفتح بعد أسعار البيع.</p></article>`; }
+function sales() { return `<article class="card"><h3>شاشة البيع</h3><p class="note">تفتح بعد أسعار البيع. صور الأصناف في تبويب الأصناف.</p></article>`; }
 function products() {
   const rows = STOCK.lines.map(l => `<tr><td>${l.nameAr}</td><td>${l.name}</td></tr>`).join("");
-  return `<article class="card"><table><thead><tr><th>عربي</th><th>النظام</th></tr></thead><tbody>${rows}</tbody></table></article>`;
+  return `<article class="hero"><span class="pill">كتالوج الشباك</span><div class="welcome">صور المنتجات</div><p class="note">الشيت اللي رفعته. للكاشير نحتاج صورة مفردة لكل صنف.</p></article><article class="card" style="margin-top:16px"><table><thead><tr><th>عربي</th><th>النظام</th></tr></thead><tbody>${rows}</tbody></table></article>`;
 }
 const titles = { home: "لوحة التحكم", cash: "الصندوق", stock: "الجرد", sales: "المبيعات", products: "الأصناف" };
 const renderers = { home, cash, stock, sales, products };
