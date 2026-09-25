@@ -1,10 +1,1 @@
-[
-  {"sku": "OLV-500", "nameAr": "زيت زيتون بكر فاخر", "unit": "500 مل", "price": 38, "stock": 42},
-  {"sku": "RCE-5KG", "nameAr": "أرز بسمتي فاخر", "unit": "5 كجم", "price": 49, "stock": 18},
-  {"sku": "COF-250", "nameAr": "قهوة عربية", "unit": "250 جم", "price": 22, "stock": 31},
-  {"sku": "PST-500", "nameAr": "معكرونة إسباجيتي", "unit": "500 جم", "price": 16.5, "stock": 54},
-  {"sku": "DAT-PRE", "nameAr": "تمر سعودي فاخر", "unit": "علبة", "price": 28, "stock": 24},
-  {"sku": "TEA-100", "nameAr": "شاي أسود", "unit": "100 جم", "price": 12.5, "stock": 67},
-  {"sku": "SGR-2KG", "nameAr": "سكر أبيض", "unit": "2 كجم", "price": 6.75, "stock": 80},
-  {"sku": "HNY-GLS", "nameAr": "عسل طبيعي", "unit": "برطمان", "price": 24, "stock": 19}
-]
+[]
