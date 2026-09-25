@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CLAQUETTE — Noir Cinema</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <aside class="rail">
+    <div class="brand">
+      <div class="clap">🎬</div>
+      <strong>CLAQUETTE</strong>
+      <span>Noir Cinema</span>
+    </div>
+    <nav>
+      <button data-view="home" class="active">الرئيسية</button>
+      <button data-view="cash">الصندوق</button>
+      <button data-view="stock">الجرد</button>
+      <button data-view="sales">المبيعات</button>
+      <button data-view="products">الأصناف</button>
+    </nav>
+    <div class="branch">العثيم مول · عنيزة</div>
+  </aside>
+  <main>
+    <header class="top">
+      <div>
+        <p class="kicker">CLAQUETTE</p>
+        <h1 id="title">لوحة التحكم</h1>
+      </div>
+      <div class="meta">25 سبتمبر 2026 · 4:14 م</div>
+    </header>
+    <section id="view-home" class="view"></section>
+    <section id="view-cash" class="view hidden"></section>
+    <section id="view-stock" class="view hidden"></section>
+    <section id="view-sales" class="view hidden"></section>
+    <section id="view-products" class="view hidden"></section>
+  </main>
+  <script src="./app.js"></script>
+</body>
+</html>
